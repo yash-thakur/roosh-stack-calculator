@@ -2,8 +2,6 @@
 
 1.  **Clone and install dependencies:**
 
-    bash
-
     ```bash
     git clone <repository>
     cd roosh-stack-calculator
@@ -12,16 +10,12 @@
 
 2.  **Database setup:**
 
-    bash
-
     ```bash
     cp .env.example .env
     # Edit .env with your database URL
     ```
 
 3.  **Docker deployment:**
-
-    bash
 
     ```bash
     docker-compose up --build
@@ -33,9 +27,13 @@
     npx prisma migrate dev
     ```
 
-## API Usage Examples
+4.  **Testing:**
 
-bash
+    ```bash
+    npm test
+    ```
+
+## API Usage Examples
 
 ```bash
 # Get stack
