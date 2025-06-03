@@ -6,7 +6,7 @@
 
     ```bash
     git clone <repository>
-    cd stack-calculator-api
+    cd roosh-stack-calculator
     npm install
     ```
 
@@ -17,24 +17,20 @@
     ```bash
     cp .env.example .env
     # Edit .env with your database URL
-    npx prisma migrate dev
-    npx prisma generate
     ```
 
-3.  **Development:**
-
-    bash
-
-    ```bash
-    npm run dev
-    ```
-
-4.  **Docker deployment:**
+3.  **Docker deployment:**
 
     bash
 
     ```bash
     docker-compose up --build
+    ```
+
+    perform initial migration in new terminal
+
+    ```bash
+    npx prisma migrate dev
     ```
 
 ## API Usage Examples
