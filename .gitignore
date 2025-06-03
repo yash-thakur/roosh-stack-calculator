@@ -1,0 +1,57 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+.next/
+out/
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.*.local
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Prisma artifacts (optional: ignore generated SQLite DB or temp files)
+prisma/*.db
+prisma/*.db-journal
+
+# Coverage reports
+coverage/
+
+# IDE/editor settings
+.vscode/
+.idea/
+*.swp
+
+# Optional: Mac/Linux files
+*.pid
+*.seed
+
+# Misc
+*.tgz
+*.gz
+*.zip
+
+# Docker artifacts
+*.tar
+.dockerignore
+
+# Test snapshots
+__snapshots__/
+
+# Optional: ignore generated Prisma client (only if generated during build)
+# node_modules/@prisma/

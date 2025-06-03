@@ -1,0 +1,16 @@
+FROM node:18-alpine
+
+# Set working directory
+WORKDIR /app
+
+# Install app dependencies
+COPY package*.json ./
+COPY prisma ./prisma/
+RUN npm ci && npx prisma generate
+
+# Don’t copy source code — it's mounted by volume
+
+EXPOSE 3000
+
+# Start the Next.js dev server
+CMD ["npm", "run", "dev"]

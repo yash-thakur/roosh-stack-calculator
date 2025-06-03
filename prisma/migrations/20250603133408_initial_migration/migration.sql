@@ -1,0 +1,9 @@
+-- CreateTable
+CREATE TABLE "stacks" (
+    "id" SERIAL NOT NULL,
+    "values" DOUBLE PRECISION[] DEFAULT ARRAY[]::DOUBLE PRECISION[],
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updatedAt" TIMESTAMP(3) NOT NULL,
+
+    CONSTRAINT "stacks_pkey" PRIMARY KEY ("id")
+);
